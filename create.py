@@ -7,11 +7,12 @@ annFD = open("./data/annotated.txt", "w")
 obFD = open("./data/obscured.txt", "w")
 
 def ann(sent):
-    repSent = sent.replace(".", " ") \
-                    .replace("..", "(pause)") \
-                    .replace("...", "(pause)") \
-                    .replace("--", "(pause)") \
-                    .replace("---", "(pause)") 
+    repSent = sent.replace("...", " (pause) ") \
+                  .replace("..", " (pause) ") \
+                  .replace(".", " ") \
+                  .replace("---", " (pause) ") \
+                  .replace("--", " (pause) ") \
+                    
 
     repSent1 = re.sub(r"^uh+", "(uh)", repSent) 
     repSent2 = re.sub(r"^um+", "(um)", repSent1)
