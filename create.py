@@ -14,10 +14,10 @@ def ann(sent):
                   .replace("--", " (pause) ") \
                     
 
-    repSent1 = re.sub(r"^uh+", "(uh)", repSent) 
-    repSent2 = re.sub(r"^um+", "(um)", repSent1)
-    repSent3 = re.sub(r"\suh+", " (uh)", repSent2) 
-    repSent4 = re.sub(r"\sum+", " (um)", repSent3)
+    repSent1 = re.sub(r"^uh+", " (uh) ", repSent) 
+    repSent2 = re.sub(r"^um+", " (um) ", repSent1)
+    repSent3 = re.sub(r"\suh+", " (uh) ", repSent2) 
+    repSent4 = re.sub(r"\sum+", " (um) ", repSent3)
     # TODO: multiple spaces
     repSent5 = re.sub(r" - ", "(pause)", repSent4)  
     repSent6 = re.sub(r"-uh+", "(uh)", repSent5) 
