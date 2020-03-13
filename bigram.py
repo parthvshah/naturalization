@@ -6,15 +6,26 @@ import numpy as np
 bigram_p = {}
 
 START_SYM = "<s>"
-PERCENTAGE = 0.05
+PERCENTAGE = 0.02
 
 # TODO: add a right skewed prob dist
-def createDist(possible):
-    dist = []
-    for i in range(len(possible)):
-        dist.append(1.0/len(possible))
+def createDist(possible, dtype="uniform"):
+    if(dtype=="uniform"):
+        dist = []
+        for i in range(len(possible)):
+            dist.append(1.0/len(possible))
 
-    return dist
+        return dist
+
+    if(dtype=="right_skewed"):
+        total = 0
+        for it in possible:
+            total += it[1]
+        dist = []
+        for i in range(len(possible)):
+            dist.append(possible[i][1]/total)
+
+        return dist
 
 def bigramSort(listOfBigrams):
     return sorted(listOfBigrams, key=lambda x: x[1], reverse=True)
@@ -64,11 +75,11 @@ def returnDraw(word, draw):
             return it[0]
 
 if __name__ == "__main__":
-    inputSentence = "may the force be with you my padawan"
+    inputSentence = input()
     bigrams = createListOfBigrams()
     choices = np.array(possibleAlt(inputSentence, bigrams))
 
-    draw = choices[choice(choices.shape[0], int(PERCENTAGE*len(choices)), p=createDist(choices))]
+    draw = choices[choice(choices.shape[0], int(PERCENTAGE*len(choices)), p=createDist(choices, dtype="right_skewed"))]
     print(draw)
 
     for word in list(inputSentence.split()):
