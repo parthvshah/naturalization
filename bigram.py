@@ -7,6 +7,7 @@ bigram_p = {}
 
 START_SYM = "<s>"
 PERCENTAGE = 0.02
+DTYPE_ERROR = "Dytpe does not exist."
 
 # TODO: add a right skewed prob dist
 def createDist(possible, dtype="uniform"):
@@ -26,6 +27,9 @@ def createDist(possible, dtype="uniform"):
             dist.append(possible[i][1]/total)
 
         return dist
+
+    else:
+        return DTYPE_ERROR
 
 def bigramSort(listOfBigrams):
     return sorted(listOfBigrams, key=lambda x: x[1], reverse=True)
@@ -74,12 +78,18 @@ def returnDraw(word, draw):
         if( (it[0][1] == word) or (it[0][0] == word) ):
             return it[0]
 
+def cleanInput(sent):
+    sent = sent.lower()
+    return sent.replace(".", "") \
+                .replace(",", "") \
+                .replace("\"", "")
+
 if __name__ == "__main__":
-    inputSentence = input()
+    inputSentence = cleanInput(input())
     bigrams = createListOfBigrams()
     choices = np.array(possibleAlt(inputSentence, bigrams))
 
-    draw = choices[choice(choices.shape[0], int(PERCENTAGE*len(choices)), p=createDist(choices, dtype="right_skewed"))]
+    draw = choices[choice(choices.shape[0], int(PERCENTAGE*len(choices)), p=createDist(choices, dtype="uniform"))]
     print(draw)
 
     for word in list(inputSentence.split()):
