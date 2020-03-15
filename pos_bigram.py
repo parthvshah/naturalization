@@ -1,5 +1,7 @@
 #from __future__ import division
 import nltk
+# nltk.download('averaged_perceptron_tagger')
+from nltk import pos_tag
 from numpy.random import choice
 import numpy as np
 
@@ -34,19 +36,25 @@ def createDist(possible, dtype="uniform"):
 def bigramSort(listOfBigrams):
     return sorted(listOfBigrams, key=lambda x: x[1], reverse=True)
 
-def createListOfBigrams():
+def createListOfBigrams():   
     f = open("./data/annotated.txt", "r")
     corpus = f.readlines()
-
     for sentence in corpus:
         tokens = sentence.split()
         tokens = [START_SYM] + tokens 
-        bigrams = (tuple(nltk.bigrams(tokens)))
+        tokens_tag = pos_tag(tokens)
+        bigrams = (tuple(nltk.bigrams(tokens_tag)))
+        #tokens_tag = pos_tag(bigrams)
+        # print(bigrams)
+        
         for bigram in bigrams:
-            if(bigram[0]=="(pause)" or bigram[1]=="(pause)" or \
-                bigram[0]=="(uh)" or bigram[1]=="(uh)" or \
-                bigram[0]=="(um)" or bigram[1]=="(um)"):
+            if(bigram[0][0]=="<s>" or bigram[1][0]=="<s>"):
+                continue
+            if(bigram[0][0]=="(pause)" or bigram[1][0]=="(pause)" or \
+                bigram[0][0]=="(uh)" or bigram[1][0]=="(uh)" or \
+                bigram[0][0]=="(um)" or bigram[1][0]=="(um)"):
                 if bigram not in bigram_p:
+                    # print(bigram)
                     bigram_p[bigram] = 1
                 else:
                     bigram_p[bigram] += 1
@@ -54,18 +62,6 @@ def createListOfBigrams():
     listOfBigrams = [(k, v) for k, v in bigram_p.items()]
     return bigramSort(listOfBigrams)
     
-
-def possibleAlt(sentence, listOfBigrams):
-    sentence = sentence.lower()
-    tokens = sentence.split()
-    # tokens = [START_SYM] + tokens
-    possibleBigrams = []
-    for token in tokens:
-        for j in range(len(listOfBigrams)):
-            # FIXME: could be an 'in', clean RHS string 
-            if( (token == listOfBigrams[j][0][0]) or (token == listOfBigrams[j][0][1]) ):
-                possibleBigrams.append(listOfBigrams[j])
-    return bigramSort(possibleBigrams)
 
 def searchDraw(word, draw):
     for it in draw:
@@ -84,11 +80,23 @@ def cleanInput(sent):
                 .replace(",", "") \
                 .replace("\"", "")
 
+def getPOS(sentence, listOfBigrams):
+    sentence = sentence.lower()
+    tokens = sentence.split()
+    tokens = pos_tag(tokens)
+    possibleBigrams = []
+    for token in tokens:
+        for j in range(len(listOfBigrams)):
+            if( (token == listOfBigrams[j][0][0]) or (token == listOfBigrams[j][0][1]) ):
+                possibleBigrams.append(listOfBigrams[j])
+    return bigramSort(possibleBigrams)
+
+    
 if __name__ == "__main__":
     inputSentence = cleanInput(input())
     bigrams = createListOfBigrams()
-    choices = np.array(possibleAlt(inputSentence, bigrams))
-
+   
+    choices = np.array(getPOS(inputSentence, bigrams))
     print(choices)
     draw = choices[choice(choices.shape[0], int(PERCENTAGE*len(choices)), p=createDist(choices, dtype="uniform"))]
     #print(draw)
