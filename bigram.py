@@ -6,7 +6,7 @@ import numpy as np
 bigram_p = {}
 
 START_SYM = "<s>"
-PERCENTAGE = 0.02
+PERCENTAGE = 0.05
 DTYPE_ERROR = "Dytpe does not exist."
 
 # TODO: add a right skewed prob dist
@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
     print(choices)
     draw = choices[choice(choices.shape[0], int(PERCENTAGE*len(choices)), p=createDist(choices, dtype="uniform"))]
-    #print(draw)
+    # print(draw)
     
 
     for word in list(inputSentence.split()):

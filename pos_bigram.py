@@ -44,8 +44,6 @@ def createListOfBigrams():
         tokens = [START_SYM] + tokens 
         tokens_tag = pos_tag(tokens)
         bigrams = (tuple(nltk.bigrams(tokens_tag)))
-        #tokens_tag = pos_tag(bigrams)
-        # print(bigrams)
         
         for bigram in bigrams:
             if(bigram[0][0]=="<s>" or bigram[1][0]=="<s>"):
@@ -65,13 +63,13 @@ def createListOfBigrams():
 
 def searchDraw(word, draw):
     for it in draw:
-        if( (it[0][1] == word) or (it[0][0] == word) ):
+        if( (it[0][0][0] == word) or (it[0][1][0] == word) ):
             return 1 
     return 0
 
 def returnDraw(word, draw):
     for it in draw:
-        if( (it[0][1] == word) or (it[0][0] == word) ):
+        if( (it[0][0][0] == word) or (it[0][1][0] == word) ):
             return it[0]
 
 def cleanInput(sent):
@@ -105,7 +103,7 @@ if __name__ == "__main__":
     for word in list(inputSentence.split()):
         if(searchDraw(word, draw)==1):
             tup = returnDraw(word, draw)
-            print(tup[0]+" ", tup[1]+" ", end="")
+            print(tup[0][0]+" ", tup[1][0]+" ", end="")
         else:
             print(word + " ", end="")
     print()
