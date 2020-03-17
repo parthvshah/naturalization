@@ -1,5 +1,6 @@
 #from __future__ import division
 import nltk
+import pickle
 # nltk.download('averaged_perceptron_tagger')
 from nltk import pos_tag
 from numpy.random import choice
@@ -8,7 +9,7 @@ import numpy as np
 bigram_p = {}
 
 START_SYM = "<s>"
-PERCENTAGE = 0.02
+PERCENTAGE = 0.10
 DTYPE_ERROR = "Dytpe does not exist."
 
 # TODO: add a right skewed prob dist
@@ -92,12 +93,20 @@ def getPOS(sentence, listOfBigrams):
     
 if __name__ == "__main__":
     inputSentence = cleanInput(input())
-    bigrams = createListOfBigrams()
+
+    # bigrams = createListOfBigrams()
+    # outfile = open('./obj/pos_bigram', 'wb')
+    # pickle.dump(bigrams, outfile)
+    # outfile.close()
+
+    infile = open('./obj/pos_bigram', 'rb')
+    bigrams = pickle.load(infile)
+    infile.close()
    
     choices = np.array(getPOS(inputSentence, bigrams))
     print(choices)
-    draw = choices[choice(choices.shape[0], int(PERCENTAGE*len(choices)), p=createDist(choices, dtype="uniform"))]
-    #print(draw)
+    draw = choices[choice(choices.shape[0], int(PERCENTAGE*(inputSentence.count(" ")+1)), p=createDist(choices, dtype="right_skewed"))]
+    print(draw)
     
 
     for word in list(inputSentence.split()):
