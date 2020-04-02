@@ -83,7 +83,6 @@ def cleanInput(sent):
     sent = sent.lower()
     return sent.replace(".", "") \
                 .replace(",", "") \
-                .replace("'", "") \
                 .replace("\"", "")
 
 def bigramDriver(inputSentence):
