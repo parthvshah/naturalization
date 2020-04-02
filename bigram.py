@@ -7,7 +7,7 @@ import numpy as np
 bigram_p = {}
 
 START_SYM = "<s>"
-PERCENTAGE = 0.10
+PERCENTAGE = 0.075
 DTYPE_ERROR = "Dytpe does not exist."
 
 # TODO: add a right skewed prob dist
@@ -83,7 +83,29 @@ def cleanInput(sent):
     sent = sent.lower()
     return sent.replace(".", "") \
                 .replace(",", "") \
+                .replace("'", "") \
                 .replace("\"", "")
+
+def bigramDriver(inputSentence):
+    inputSentence = cleanInput(inputSentence)
+    infile = open('./obj/bigram', 'rb')
+    bigrams = pickle.load(infile)
+    infile.close()
+
+    choices = np.array(possibleAlt(inputSentence, bigrams))
+
+    # print(choices)
+    draw = choices[choice(choices.shape[0], int(PERCENTAGE*(inputSentence.count(" ")+1)), p=createDist(choices, dtype="uniform"))]
+    outputSentence = []
+    for word in list(inputSentence.split()):
+        if(searchDraw(word, draw)==1):
+            tup = returnDraw(word, draw)
+            outputSentence.append(tup[0])
+            outputSentence.append(tup[1])
+        else:
+            outputSentence.append(word)
+
+    return ' '.join(word for word in outputSentence)
 
 if __name__ == "__main__":
     inputSentence = cleanInput(input())
