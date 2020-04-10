@@ -10,7 +10,6 @@ START_SYM = "<s>"
 PERCENTAGE = 0.075
 DTYPE_ERROR = "Dytpe does not exist."
 
-# TODO: add a right skewed prob dist
 def createDist(possible, dtype="uniform"):
     if(dtype=="uniform"):
         dist = []
