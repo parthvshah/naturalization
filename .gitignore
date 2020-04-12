@@ -1,3 +1,6 @@
 /__pycache__
 in.txt
 out.txt
+/data/model*
+/data/glove*
+/data/*.p
