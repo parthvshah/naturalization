@@ -4,3 +4,5 @@ out.txt
 /data/model*
 /data/glove*
 /data/*.p
+/data/checkpoints
+/.vscode
