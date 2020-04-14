@@ -21,6 +21,19 @@ def generate_seq(model, tokenizer, max_length, seed_text, n_words):
 				break
 		in_text += ' ' + out_word
 	return in_text
+
+def generate_word(model, tokenizer, max_length, seed_text):
+    in_text = seed_text
+    encoded = tokenizer.texts_to_sequences([in_text])[0]
+    encoded = pad_sequences([encoded], maxlen=max_length, padding='pre')
+    yhat = model.predict_classes(encoded, verbose=0)
+    out_word = ''
+    for word, index in tokenizer.word_index.items():
+        if index == yhat:
+            out_word = word
+            break
+    return out_word
+ 
  
 def load_data(file_name, size):
     data = ''

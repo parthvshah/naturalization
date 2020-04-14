@@ -7,7 +7,7 @@ import numpy as np
 bigram_p = {}
 
 START_SYM = "<s>"
-PERCENTAGE = 0.075
+PERCENTAGE = 0.095
 DTYPE_ERROR = "Dytpe does not exist."
 
 def createDist(possible, dtype="uniform"):
@@ -92,8 +92,14 @@ def bigramDriver(inputSentence):
 
     choices = np.array(possibleAlt(inputSentence, bigrams))
 
-    # print(choices)
-    draw = choices[choice(choices.shape[0], int(PERCENTAGE*(inputSentence.count(" ")+1)), p=createDist(choices, dtype="uniform"))]
+
+    # Number of choices
+
+    print(choices)
+    percentage = int(PERCENTAGE*(inputSentence.count(" ")+1))
+    draw = choices[choice(choices.shape[0], percentage, p=createDist(choices))]
+    print(draw)
+
     outputSentence = []
     for word in list(inputSentence.split()):
         if(searchDraw(word, draw)==1):
@@ -107,27 +113,4 @@ def bigramDriver(inputSentence):
 
 if __name__ == "__main__":
     inputSentence = cleanInput(input())
-
-    # bigrams = createListOfBigrams()
-    # outfile = open('./obj/bigram', 'wb')
-    # pickle.dump(bigrams, outfile)
-    # outfile.close()
-
-    infile = open('./obj/bigram', 'rb')
-    bigrams = pickle.load(infile)
-    infile.close()
-
-    choices = np.array(possibleAlt(inputSentence, bigrams))
-
-    # print(choices)
-    draw = choices[choice(choices.shape[0], int(PERCENTAGE*(inputSentence.count(" ")+1)), p=createDist(choices, dtype="right_skewed"))]
-    print(draw)
-    
-
-    for word in list(inputSentence.split()):
-        if(searchDraw(word, draw)==1):
-            tup = returnDraw(word, draw)
-            print(tup[0]+" ", tup[1]+" ", end="")
-        else:
-            print(word + " ", end="")
-    print()
+    print(bigramDriver(inputSentence))
