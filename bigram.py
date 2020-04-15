@@ -108,6 +108,7 @@ def bigramDriver(inputSentence):
             outputSentence.append(tup[1])
         else:
             outputSentence.append(word)
+            # print(outputSentence)
 
     return ' '.join(word for word in outputSentence)
 
