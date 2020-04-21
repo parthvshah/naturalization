@@ -3,7 +3,7 @@ import nltk
 import pickle
 from numpy.random import choice
 import numpy as np
-
+# Hello today is a lovely day to go outside to the park and have a picnic
 bigram_p = {}
 
 START_SYM = "<s>"
