@@ -18,7 +18,7 @@ from random import sample
 bigram_p = {}
 
 START_SYM = "<s>"
-PERCENTAGE = 0.095
+PERCENTAGE = 0.40
 DTYPE_ERROR = "Dytpe does not exist."
 
 def createDist(possible, dtype="uniform"):
@@ -96,24 +96,23 @@ def cleanInput(sent):
                 .replace("\"", "")
 
 
-def gen_sentences(sent, choices):
+def gen_sentences(sent, choices, model, tokenizer, max_length):
     # Number of choices
-    print(choices)
+    # print(choices)
     formed_sentences = []
     for bigram in choices:
         next_word = ''
         prev_word = ''
         sentence = []
-        op_sentence = []
         outputSentence = []
 
         if(bigram[0][0] != "(uh)" and bigram[0][0] != "(um)" and bigram[0][0] != "(pause)"):
             prev_word = bigram[0][0]
             next_word = bigram[0][1]
-            print("Previous word is ",prev_word)
+            # print("Previous word is ",prev_word)
             # print(next_word)
             pred_word = next_word.strip("()")
-            print("Next word is ", pred_word)
+            # print("Next word is ", pred_word)
             
             for word in list(sent.split()):
                 if(word == prev_word):
@@ -123,18 +122,20 @@ def gen_sentences(sent, choices):
                 else:
                     outputSentence.append(word)
         
-            print("Generated word is:", gen_word)
+            # print("Generated word is:", gen_word)
             op_sentence= outputSentence.append(gen_word)
-            print("output: ",outputSentence)
+            # print("output: ",outputSentence)
             
             if(pred_word == gen_word):
                 sentence = ' '.join(word for word in outputSentence)
-                print("Correct Prediction \n ")
+                # print("Correct Prediction \n ")
                 formed_sentences.append(sentence)
             else:
-                print("Incorrect Prediction \n")
+                pass
+                # print("Incorrect Prediction \n")
 
     return formed_sentences
+
 # May the force be with you on this fateful day padawan
 # It is our choices ... that show what we truly are, far more than our abilities.
 def bigramDriver(inputSentence):
@@ -191,7 +192,7 @@ def model_tol(max_length, vocab_size, X, y, load=True):
     if(load):
         
         model = load_model('./data/model_LSTM_h.h5')
-        print("Loaded model from disk.")
+        # print("Loaded model from disk.")
         return model
     else:
         model = Sequential()
@@ -212,17 +213,17 @@ def load_tokenizer():
     encoded = tokenizer.texts_to_sequences([data])[0]
 
     vocab_size = len(tokenizer.word_index) + 1
-    print('Vocabulary Size: %d' % vocab_size)
+    # print('Vocabulary Size: %d' % vocab_size)
 
     sequences = list()
     for i in range(2, len(encoded)):
         sequence = encoded[i-2:i+1]
         sequences.append(sequence)
-    print('Total Sequences: %d' % len(sequences))
+    # print('Total Sequences: %d' % len(sequences))
 
     max_length = max([len(seq) for seq in sequences])
     sequences = pad_sequences(sequences, maxlen=max_length, padding='pre')
-    print('Max Sequence Length: %d' % max_length)
+    # print('Max Sequence Length: %d' % max_length)
 
     sequences = array(sequences)
     X, y = sequences[:,:-1],sequences[:,-1]
@@ -237,7 +238,7 @@ def flatten(a):
     
     res = np.array(forFlatten)
     res = res.T
-    print(res)
+    # print(res)
     prevPrinted = ""
     finalSentence = []
     for group in res:
@@ -251,17 +252,13 @@ def indexing(a, org):
     indexDict = dict()
     listOrg = list(org.split(' '))
     # print(listOrg)
-    inserted = ""
     for sent in a:
         if('pause' in list(sent.split(' '))):
             indexDict[sent] = (list(sent.split(' ')).index('pause'), 'pause')
-            inserted = 'pause'
         if('uh' in list(sent.split(' '))):
             indexDict[sent] = (list(sent.split(' ')).index('uh'), 'uh')
-            inserted = 'uh'
         if('um' in list(sent.split(' '))):
             indexDict[sent] = (list(sent.split(' ')).index('um'), 'um')
-            inserted = 'um'
             
     inOrder = {k: v for k, v in sorted(indexDict.items(), key=lambda item: item[1])}
     # print(inOrder)
@@ -298,6 +295,21 @@ def gen_p(lf,p):
 
     return lp
 
+def hybrid_driver(inputSent):
+    inputSentence = cleanInput(inputSent)
+    choices = []
+    sentence, choices = bigramDriver(inputSentence)
+    tokenizer, max_length, vocab_size, X, y = load_tokenizer()
+    model = model_tol(max_length, vocab_size, X, y, load=True)
+    sent_list = []
+    sent_list = (gen_sentences(sentence, choices, model, tokenizer, max_length))
+    formed = gen_entire_sentence(sent_list,sentence)
+    lf = len(formed)
+    percentage = int(PERCENTAGE*(sentence.count(" ")+1))
+    fp = gen_p(lf,percentage)
+    final = final_sent(formed, sentence, fp)
+    return final
+
 
 if __name__ == "__main__":
     inputSentence = cleanInput(input())
@@ -327,3 +339,5 @@ if __name__ == "__main__":
     final = final_sent(formed, sentence, fp)
     print("FINAL:")
     print(final)
+
+    # print(hybrid_driver("If you can imagine two men who have known OJ I knew him twenty five years and AC grew up with him knows him much better than I"))

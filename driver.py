@@ -1,4 +1,4 @@
-from bigram import bigramDriver
+from hybrid import hybrid_driver
 
 def sanitize(line):
     return line.replace("(pause)", "") \
@@ -16,5 +16,5 @@ for line in inputLines:
         print()
         continue
     sanitizedLine = sanitize(line)
-    print(bigramDriver(sanitizedLine))
+    print(hybrid_driver(sanitizedLine))
 
