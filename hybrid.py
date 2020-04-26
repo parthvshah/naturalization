@@ -12,6 +12,7 @@ from keras.callbacks import ModelCheckpoint
 from keras.layers import Dense
 from keras.layers import LSTM, GRU
 from keras.layers import Embedding
+from random import sample
  
 
 bigram_p = {}
@@ -45,7 +46,7 @@ def bigramSort(listOfBigrams):
     return sorted(listOfBigrams, key=lambda x: x[1], reverse=True)
 
 def createListOfBigrams():
-    f = open("./data/annotated.txt", "r")
+    f = open("./data/reduced.txt", "r")
     corpus = f.readlines()
 
     for sentence in corpus:
@@ -106,7 +107,7 @@ def gen_sentences(sent, choices):
         op_sentence = []
         outputSentence = []
 
-        if(bigram[0][0] != "(uh)" and bigram[0][0] and "(um)" and bigram[0][0] != "(pause)"):
+        if(bigram[0][0] != "(uh)" and bigram[0][0] != "(um)" and bigram[0][0] != "(pause)"):
             prev_word = bigram[0][0]
             next_word = bigram[0][1]
             print("Previous word is ",prev_word)
@@ -142,6 +143,9 @@ def bigramDriver(inputSentence):
     bigrams = pickle.load(infile)
     infile.close()
     choices = np.array(possibleAlt(inputSentence, bigrams))
+
+    # percentage = int(PERCENTAGE*(inputSentence.count(" ")+1))
+    # draw = choices[choice(choices.shape[0], percentage, p=createDist(choices))]
 
     outputSentence = []
     for word in list(inputSentence.split()):
@@ -196,14 +200,14 @@ def model_tol(max_length, vocab_size, X, y, load=True):
         model.add(Dense(vocab_size, activation='softmax'))
 
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-        model.fit(X, y, epochs=50) # Epochs: 500
+        model.fit(X, y, epochs=300) # Epochs: 500
 
         model.save('./data/model_LSTM_h.h5')
         return model
 
 def load_tokenizer():
     tokenizer = Tokenizer()
-    data = load_data('./data/annotated.txt', 1500) # Max: 10000
+    data = load_data('./data/reduced.txt', 500) # Max: 10000
     tokenizer.fit_on_texts([data])
     encoded = tokenizer.texts_to_sequences([data])[0]
 
@@ -226,19 +230,100 @@ def load_tokenizer():
 
     return tokenizer, max_length, vocab_size, X, y
 
+def flatten(a):
+    forFlatten = []
+    for sent in a:
+        forFlatten.append(list(sent.split()))
+    
+    res = np.array(forFlatten)
+    res = res.T
+    print(res)
+    prevPrinted = ""
+    finalSentence = []
+    for group in res:
+        for word in group:
+            if(prevPrinted != word):
+                prevPrinted = word
+                finalSentence.append(word)
+    return ' '.join(finalSentence)     
+
+def indexing(a, org):
+    indexDict = dict()
+    listOrg = list(org.split(' '))
+    # print(listOrg)
+    inserted = ""
+    for sent in a:
+        if('pause' in list(sent.split(' '))):
+            indexDict[sent] = (list(sent.split(' ')).index('pause'), 'pause')
+            inserted = 'pause'
+        if('uh' in list(sent.split(' '))):
+            indexDict[sent] = (list(sent.split(' ')).index('uh'), 'uh')
+            inserted = 'uh'
+        if('um' in list(sent.split(' '))):
+            indexDict[sent] = (list(sent.split(' ')).index('um'), 'um')
+            inserted = 'um'
+            
+    inOrder = {k: v for k, v in sorted(indexDict.items(), key=lambda item: item[1])}
+    # print(inOrder)
+    offset = 0
+    for key in inOrder:
+        listOrg.insert(inOrder[key][0]+offset, inOrder[key][1])
+        offset += 1
+    
+    return ' '.join(listOrg)
+
+def final_sent(formed,sentence,percentage):
+    returned_l = sample(formed,percentage)
+    return(indexing(returned_l, sentence))
+
+def gen_entire_sentence(sent_list,sentence):
+    formedSent = []
+    s1 = list(sentence.split(' '))
+    l1 = len(s1)
+    for sent in sent_list:
+        s = list(sent.split(' '))
+        l2 = len(s)
+        l3 = l2 - 1
+        for i in range(l3,l1):
+            s.append(s1[i])    
+        final = ' '.join(word for word in s)
+        formedSent.append(final)
+    return formedSent
+
+def gen_p(lf,p):
+    lp = p
+    if(lp > lf):
+        while(lp>lf):
+            lp-=1
+
+    return lp
+
 
 if __name__ == "__main__":
     inputSentence = cleanInput(input())
     choices = []
     sentence , choices = bigramDriver(inputSentence)
-    # print(sentence)
     tokenizer, max_length, vocab_size, X, y = load_tokenizer()
     model = model_tol(max_length, vocab_size, X, y, load=True)
     # print(model.summary())
     sent_list = []
     sent_list = (gen_sentences(sentence, choices))
+    # print(sent_list)
     print( "Sentences are: ")
-    for sentence in sent_list:
-        print(sentence)
-   
-
+    for sent in sent_list:
+        print(sent)
+    print()
+    print()
+    # print("sentence is ",sentence)
+    print("Formed:")
+    formed = gen_entire_sentence(sent_list,sentence)
+    print(formed)
+    lf = len(formed)
+    # print(lf, "is the length")
+    percentage = int(PERCENTAGE*(sentence.count(" ")+1))
+    # print(percentage)
+    fp = gen_p(lf,percentage)
+    # print(fp)
+    final = final_sent(formed, sentence, fp)
+    print("FINAL:")
+    print(final)

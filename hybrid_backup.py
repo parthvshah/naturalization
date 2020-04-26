@@ -4,7 +4,6 @@ import pickle
 from numpy.random import choice
 import numpy as np
 from numpy import array
-from nltk import pos_tag
 from keras.preprocessing.text import Tokenizer
 from keras.utils import to_categorical
 from keras.preprocessing.sequence import pad_sequences
@@ -46,7 +45,7 @@ def bigramSort(listOfBigrams):
     return sorted(listOfBigrams, key=lambda x: x[1], reverse=True)
 
 def createListOfBigrams():
-    f = open("./data/pos.txt", "r")
+    f = open("./data/annotated.txt", "r")
     corpus = f.readlines()
 
     for sentence in corpus:
@@ -107,41 +106,32 @@ def gen_sentences(sent, choices):
         op_sentence = []
         outputSentence = []
 
-        if(bigram[0][0] != "(uh)" and bigram[0][0] != "(um)" and bigram[0][0] != "(pause)"):
+        if(bigram[0][0] != "(uh)" and bigram[0][0] and "(um)" and bigram[0][0] != "(pause)"):
             prev_word = bigram[0][0]
             next_word = bigram[0][1]
-            # print("Previous word is ",prev_word)
+            print("Previous word is ",prev_word)
             # print(next_word)
             pred_word = next_word.strip("()")
-            # print("Next word is ", pred_word)
+            print("Next word is ", pred_word)
             
             for word in list(sent.split()):
                 if(word == prev_word):
                     outputSentence.append(word)
-                    pos_sent = getPos(outputSentence)
-                    gen_word = generate_word(model, tokenizer, max_length-1, pos_sent)
+                    gen_word = generate_word(model, tokenizer, max_length-1, outputSentence)
                     break
                 else:
                     outputSentence.append(word)
-
-                
+        
             print("Generated word is:", gen_word)
             op_sentence= outputSentence.append(gen_word)
             print("output: ",outputSentence)
-
-            if(gen_word == "uh" or gen_word == "um" or gen_word == "pause"):
+            
+            if(pred_word == gen_word):
                 sentence = ' '.join(word for word in outputSentence)
-                print("Correct Prediction \n")
+                print("Correct Prediction \n ")
                 formed_sentences.append(sentence)
             else:
                 print("Incorrect Prediction \n")
-                
-            # if(pred_word == gen_word):
-            #     sentence = ' '.join(word for word in outputSentence)
-            #     print("Correct Prediction \n ")
-            #     formed_sentences.append(sentence)
-            # else:
-            #     print("Incorrect Prediction \n")
 
     return formed_sentences
 # May the force be with you on this fateful day padawan
@@ -196,7 +186,7 @@ def load_data(file_name, size):
 def model_tol(max_length, vocab_size, X, y, load=True):
     if(load):
         
-        model = load_model('./data/model_LSTM_p.h5')
+        model = load_model('./data/model_LSTM_h.h5')
         print("Loaded model from disk.")
         return model
     else:
@@ -206,14 +196,14 @@ def model_tol(max_length, vocab_size, X, y, load=True):
         model.add(Dense(vocab_size, activation='softmax'))
 
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-        model.fit(X, y, epochs=100) # Epochs: 500
+        model.fit(X, y, epochs=50) # Epochs: 500
 
-        model.save('./data/model_LSTM_p.h5')
+        model.save('./data/model_LSTM_h.h5')
         return model
 
 def load_tokenizer():
     tokenizer = Tokenizer()
-    data = load_data('./data/pos.txt', 1000) # Max: 10000
+    data = load_data('./data/annotated.txt', 1500) # Max: 10000
     tokenizer.fit_on_texts([data])
     encoded = tokenizer.texts_to_sequences([data])[0]
 
@@ -236,15 +226,17 @@ def load_tokenizer():
 
     return tokenizer, max_length, vocab_size, X, y
 
-
-def getPos(sent):
-    s=""
-    # tokens = inputSentence.split()
-    tokens_tag = tuple(pos_tag(sent))
-    for token in tokens_tag:
-        s = s + token[1] + " "
-    return s
-
+def longestSentence(sent_list):
+    maxlen = 0
+    longsent = ''
+    l = len(sent_list)
+    for i in range(l):
+        l2 = len(sent_list[i])
+        if (l2 > maxlen):
+            maxlen = l2
+            longsent = sent_list[i]
+return(longsent)
+ 
 
 
 if __name__ == "__main__":
@@ -253,12 +245,17 @@ if __name__ == "__main__":
     sentence , choices = bigramDriver(inputSentence)
     # print(sentence)
     tokenizer, max_length, vocab_size, X, y = load_tokenizer()
-    model = model_tol(max_length, vocab_size, X, y, load=False)
+    model = model_tol(max_length, vocab_size, X, y, load=True)
     # print(model.summary())
     sent_list = []
     sent_list = (gen_sentences(sentence, choices))
+    print(sent_list)
     print( "Sentences are: ")
     for sentence in sent_list:
         print(sentence)
+
+    longestSent = longestSentence(sent_list)
+    percentage = int(PERCENTAGE*(longestSent.count(" ")+1))
+
    
 
