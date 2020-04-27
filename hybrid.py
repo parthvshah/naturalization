@@ -98,7 +98,7 @@ def cleanInput(sent):
 
 def gen_sentences(sent, choices, model, tokenizer, max_length):
     # Number of choices
-    # print(choices)
+    print(choices)
     formed_sentences = []
     for bigram in choices:
         next_word = ''
@@ -109,10 +109,10 @@ def gen_sentences(sent, choices, model, tokenizer, max_length):
         if(bigram[0][0] != "(uh)" and bigram[0][0] != "(um)" and bigram[0][0] != "(pause)"):
             prev_word = bigram[0][0]
             next_word = bigram[0][1]
-            # print("Previous word is ",prev_word)
+            print("Previous word is: ",prev_word)
             # print(next_word)
             pred_word = next_word.strip("()")
-            # print("Next word is ", pred_word)
+            print("Next word is: ", pred_word)
             
             for word in list(sent.split()):
                 if(word == prev_word):
@@ -122,17 +122,17 @@ def gen_sentences(sent, choices, model, tokenizer, max_length):
                 else:
                     outputSentence.append(word)
         
-            # print("Generated word is:", gen_word)
+            print("Generated word is:", gen_word)
             op_sentence= outputSentence.append(gen_word)
-            # print("output: ",outputSentence)
+            print("output: ",outputSentence)
             
             if(pred_word == gen_word):
                 sentence = ' '.join(word for word in outputSentence)
-                # print("Correct Prediction \n ")
+                print("Correct Prediction \n ")
                 formed_sentences.append(sentence)
             else:
                 pass
-                # print("Incorrect Prediction \n")
+                print("Incorrect Prediction \n")
 
     return formed_sentences
 
@@ -319,8 +319,8 @@ if __name__ == "__main__":
     model = model_tol(max_length, vocab_size, X, y, load=True)
     # print(model.summary())
     sent_list = []
-    sent_list = (gen_sentences(sentence, choices))
-    # print(sent_list)
+    sent_list = (gen_sentences(sentence, choices, model, tokenizer, max_length))
+    print(sent_list)
     print( "Sentences are: ")
     for sent in sent_list:
         print(sent)
