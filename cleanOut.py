@@ -1,6 +1,6 @@
 from random import random
 
-f = open('out.higher.txt', 'r')
+f = open('op.txt', 'r')
 
 lines = f.readlines()
 

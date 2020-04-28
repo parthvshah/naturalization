@@ -18,7 +18,9 @@ from random import sample
 bigram_p = {}
 
 START_SYM = "<s>"
-PERCENTAGE = 0.40
+# PERCENTAGE = 0.090
+PERCENTAGE = 0.20
+
 DTYPE_ERROR = "Dytpe does not exist."
 
 def createDist(possible, dtype="uniform"):
@@ -329,7 +331,9 @@ if __name__ == "__main__":
     # print("sentence is ",sentence)
     print("Formed:")
     formed = gen_entire_sentence(sent_list,sentence)
-    print(formed)
+    for ss in formed:
+        print(ss)
+    # print(formed)
     lf = len(formed)
     # print(lf, "is the length")
     percentage = int(PERCENTAGE*(sentence.count(" ")+1))

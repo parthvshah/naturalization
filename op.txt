@@ -1,0 +1,987 @@
+[[('(pause)', 'and') 8364]
+ [('(pause)', 'and') 8364]
+ [('(pause)', 'you') 6534]
+ [('(pause)', 'the') 5126]
+ [('(pause)', 'the') 5126]
+ [('(pause)', 'the') 5126]
+ [('you', '(pause)') 4533]
+ [('(pause)', "it's") 3219]
+ [('(pause)', 'a') 2780]
+ [('(pause)', 'a') 2780]
+ [('(pause)', 'a') 2780]
+ [('and', '(pause)') 1961]
+ [('and', '(pause)') 1961]
+ [('to', '(pause)') 1715]
+ [('(pause)', 'this') 1673]
+ [('(pause)', 'that') 1580]
+ [('that', '(pause)') 1551]
+ [('this', '(pause)') 1472]
+ [('(pause)', 'if') 1387]
+ [('(pause)', 'just') 1367]
+ [('(pause)', 'so') 1213]
+ [('the', '(pause)') 1195]
+ [('the', '(pause)') 1195]
+ [('the', '(pause)') 1195]
+ [('just', '(pause)') 1131]
+ [('(pause)', 'to') 1070]
+ [('(pause)', 'in') 1060]
+ [('so', '(pause)') 1029]
+ [('(pause)', 'all') 920]
+ [('on', '(pause)') 886]
+ [('on', '(pause)') 886]
+ [('up', '(pause)') 850]
+ [('a', '(pause)') 844]
+ [('a', '(pause)') 844]
+ [('a', '(pause)') 844]
+ [('of', '(pause)') 773]
+ [('out', '(pause)') 734]
+ [('(pause)', 'like') 714]
+ [('(pause)', 'like') 714]
+ [('in', '(pause)') 707]
+ [('(pause)', 'are') 672]
+ [('(pause)', 'where') 625]
+ [('time', '(pause)') 585]
+ [('them', '(pause)') 547]
+ [('go', '(pause)') 516]
+ [('go', '(pause)') 516]
+ [('like', '(pause)') 494]
+ [('like', '(pause)') 494]
+ [('(pause)', "they're") 453]
+ [("it's", '(pause)') 427]
+ [('are', '(pause)') 406]
+ [('all', '(pause)') 397]
+ [('(pause)', 'go') 343]
+ [('(pause)', 'go') 343]
+ [('(pause)', 'of') 342]
+ [('(pause)', 'on') 339]
+ [('(pause)', 'on') 339]
+ [('(pause)', 'take') 299]
+ [('(pause)', 'let') 289]
+ [('day', '(pause)') 263]
+ [('things', '(pause)') 239]
+ [('things', '(pause)') 239]
+ [('course', '(pause)') 192]
+ [('(pause)', 'will') 180]
+ [('will', '(pause)') 176]
+ [('if', '(pause)') 174]
+ [('yourself', '(pause)') 167]
+ [('world', '(pause)') 152]
+ [('thinking', '(pause)') 150]
+ [('stop', '(pause)') 148]
+ [('(pause)', 'stop') 140]
+ [('great', '(pause)') 136]
+ [('(pause)', 'out') 131]
+ [('where', '(pause)') 94]
+ [('alive', '(pause)') 91]
+ [('beautiful', '(pause)') 88]
+ [('beautiful', '(pause)') 88]
+ [('beautiful', '(pause)') 88]
+ [('(pause)', 'big') 83]
+ [('(pause)', 'things') 82]
+ [('(pause)', 'things') 82]
+ [('and', '(uh)') 80]
+ [('and', '(uh)') 80]
+ [('(pause)', 'up') 72]
+ [('big', '(pause)') 69]
+ [('(pause)', 'their') 67]
+ [('(pause)', 'both') 62]
+ [('the', '(um)') 57]
+ [('the', '(um)') 57]
+ [('the', '(um)') 57]
+ [('the', '(uh)') 54]
+ [('the', '(uh)') 54]
+ [('the', '(uh)') 54]
+ [('happen', '(pause)') 53]
+ [("they're", '(pause)') 51]
+ [('(pause)', 'great') 48]
+ [('(pause)', 'time') 47]
+ [('(uh)', 'you') 47]
+ [('take', '(pause)') 41]
+ [('so', '(uh)') 40]
+ [('you', '(uh)') 39]
+ [('boat', '(pause)') 38]
+ [('sky', '(pause)') 35]
+ [("it's", '(uh)') 27]
+ [('(pause)', 'taking') 27]
+ [('(uh)', 'the') 26]
+ [('(uh)', 'the') 26]
+ [('(uh)', 'the') 26]
+ [('their', '(pause)') 26]
+ [('(pause)', 'beautiful') 24]
+ [('(pause)', 'beautiful') 24]
+ [('(pause)', 'beautiful') 24]
+ [('lake', '(pause)') 22]
+ [('(pause)', 'thinking') 22]
+ [('lake', '(pause)') 22]
+ [('both', '(pause)') 21]
+ [('(pause)', 'day') 19]
+ [('ours', '(pause)') 18]
+ [('to', '(uh)') 18]
+ [('(uh)', "it's") 17]
+ [('a', '(uh)') 17]
+ [('a', '(uh)') 17]
+ [('a', '(uh)') 17]
+ [('that', '(uh)') 16]
+ [('and', '(um)') 16]
+ [('and', '(um)') 16]
+ [('(pause)', 'eating') 16]
+ [('this', '(uh)') 15]
+ [('(pause)', 'alive') 15]
+ [('just', '(uh)') 15]
+ [('(pause)', 'them') 14]
+ [('(uh)', 'this') 13]
+ [('(uh)', 'a') 13]
+ [('(uh)', 'a') 13]
+ [('(uh)', 'a') 13]
+ [('let', '(pause)') 13]
+ [('eating', '(pause)') 12]
+ [('(pause)', 'world') 10]
+ [('(uh)', 'and') 10]
+ [('(uh)', 'and') 10]
+ [('you', '(um)') 10]
+ [('(uh)', 'just') 10]
+ [('(pause)', 'course') 10]
+ [('of', '(uh)') 9]
+ [('on', '(uh)') 9]
+ [('on', '(uh)') 9]
+ [('so', '(um)') 9]
+ [('supposed', '(pause)') 9]
+ [('(pause)', 'happen') 8]
+ [('(pause)', 'supposed') 8]
+ [('(um)', 'you') 8]
+ [('like', '(uh)') 7]
+ [('(uh)', 'that') 7]
+ [('like', '(uh)') 7]
+ [('taking', '(pause)') 7]
+ [('(uh)', 'so') 7]
+ [('(uh)', 'in') 6]
+ [('(pause)', 'lake') 6]
+ [('(pause)', 'lake') 6]
+ [('are', '(uh)') 6]
+ [('to', '(um)') 6]
+ [('(uh)', 'if') 6]
+ [('in', '(uh)') 5]
+ [('of', '(um)') 5]
+ [("it's", '(um)') 5]
+ [('that', '(um)') 4]
+ [('this', '(um)') 4]
+ [('(um)', 'a') 4]
+ [('(um)', 'a') 4]
+ [('(um)', 'a') 4]
+ [('just', '(um)') 4]
+ [('take', '(uh)') 4]
+ [('natural', '(pause)') 4]
+ [('(uh)', 'like') 3]
+ [('(um)', 'that') 3]
+ [('(pause)', 'ours') 3]
+ [('(uh)', 'like') 3]
+ [('(uh)', 'are') 3]
+ [('go', '(uh)') 3]
+ [('(uh)', 'where') 3]
+ [('go', '(uh)') 3]
+ [('if', '(uh)') 3]
+ [('(uh)', 'let') 3]
+ [('them', '(uh)') 3]
+ [('(pause)', 'natural') 3]
+ [('(uh)', 'all') 2]
+ [('all', '(um)') 2]
+ [('(um)', 'the') 2]
+ [('(um)', 'in') 2]
+ [('great', '(uh)') 2]
+ [('(um)', "it's") 2]
+ [('a', '(um)') 2]
+ [('out', '(uh)') 2]
+ [('on', '(um)') 2]
+ [('a', '(um)') 2]
+ [('on', '(um)') 2]
+ [('a', '(um)') 2]
+ [('day', '(uh)') 2]
+ [('(um)', 'and') 2]
+ [('(um)', 'the') 2]
+ [('(um)', 'and') 2]
+ [('(um)', 'the') 2]
+ [('(um)', 'so') 2]
+ [('(uh)', 'stop') 2]
+ [('(pause)', 'yourself') 2]
+ [('up', '(um)') 2]
+ [('will', '(uh)') 2]
+ [('go', '(um)') 2]
+ [('(um)', 'where') 2]
+ [('go', '(um)') 2]
+ [('(um)', 'if') 2]
+ [('(uh)', 'take') 2]
+ [('their', '(um)') 2]
+ [('(um)', 'like') 1]
+ [('(uh)', 'time') 1]
+ [('time', '(uh)') 1]
+ [('(um)', 'this') 1]
+ [('(uh)', 'of') 1]
+ [('(um)', 'like') 1]
+ [('out', '(um)') 1]
+ [('(uh)', 'on') 1]
+ [('(uh)', 'on') 1]
+ [('are', '(um)') 1]
+ [('up', '(uh)') 1]
+ [('(um)', 'will') 1]
+ [('(uh)', 'go') 1]
+ [('(uh)', 'to') 1]
+ [('(uh)', 'go') 1]
+ [('(um)', 'just') 1]
+ [('their', '(uh)') 1]]
+Previous word is:  you
+Next word is:  pause
+Generated word is: say
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'say']
+Incorrect Prediction 
+
+Previous word is:  and
+Next word is:  pause
+Generated word is: just
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'just']
+Incorrect Prediction 
+
+Previous word is:  and
+Next word is:  pause
+Generated word is: just
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'just']
+Incorrect Prediction 
+
+Previous word is:  to
+Next word is:  pause
+Generated word is: build
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'build']
+Incorrect Prediction 
+
+Previous word is:  that
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'pause']
+Correct Prediction 
+ 
+Previous word is:  this
+Next word is:  pause
+Generated word is: town
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'town']
+Incorrect Prediction 
+
+Previous word is:  the
+Next word is:  pause
+Generated word is: kids
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'kids']
+Incorrect Prediction 
+
+Previous word is:  the
+Next word is:  pause
+Generated word is: kids
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'kids']
+Incorrect Prediction 
+
+Previous word is:  the
+Next word is:  pause
+Generated word is: kids
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'kids']
+Incorrect Prediction 
+
+Previous word is:  just
+Next word is:  pause
+Generated word is: get
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'get']
+Incorrect Prediction 
+
+Previous word is:  so
+Next word is:  pause
+Generated word is: don't
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', "don't"]
+Incorrect Prediction 
+
+Previous word is:  on
+Next word is:  pause
+Generated word is: a
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a']
+Incorrect Prediction 
+
+Previous word is:  on
+Next word is:  pause
+Generated word is: a
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a']
+Incorrect Prediction 
+
+Previous word is:  up
+Next word is:  pause
+Generated word is: of
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'of']
+Incorrect Prediction 
+
+Previous word is:  a
+Next word is:  pause
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'movies']
+Incorrect Prediction 
+
+Previous word is:  a
+Next word is:  pause
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'movies']
+Incorrect Prediction 
+
+Previous word is:  a
+Next word is:  pause
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'movies']
+Incorrect Prediction 
+
+Previous word is:  of
+Next word is:  pause
+Generated word is: through
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'through']
+Incorrect Prediction 
+
+Previous word is:  out
+Next word is:  pause
+Generated word is: i
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'i']
+Incorrect Prediction 
+
+Previous word is:  in
+Next word is:  pause
+Generated word is: on
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'on']
+Incorrect Prediction 
+
+Previous word is:  time
+Next word is:  pause
+Generated word is: racquel
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'racquel']
+Incorrect Prediction 
+
+Previous word is:  them
+Next word is:  pause
+Generated word is: out
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'them', 'out']
+Incorrect Prediction 
+
+Previous word is:  go
+Next word is:  pause
+Generated word is: sense
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'sense']
+Incorrect Prediction 
+
+Previous word is:  go
+Next word is:  pause
+Generated word is: sense
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'sense']
+Incorrect Prediction 
+
+Previous word is:  like
+Next word is:  pause
+Generated word is: a
+output:  ['things', 'like', 'a']
+Incorrect Prediction 
+
+Previous word is:  like
+Next word is:  pause
+Generated word is: a
+output:  ['things', 'like', 'a']
+Incorrect Prediction 
+
+Previous word is:  it's
+Next word is:  pause
+Generated word is: thing
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'thing']
+Incorrect Prediction 
+
+Previous word is:  are
+Next word is:  pause
+Generated word is: and
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'and']
+Incorrect Prediction 
+
+Previous word is:  all
+Next word is:  pause
+Generated word is: of
+output:  ['things', 'like', 'that', 'happen', 'all', 'of']
+Incorrect Prediction 
+
+Previous word is:  day
+Next word is:  pause
+Generated word is: don't
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', "don't"]
+Incorrect Prediction 
+
+Previous word is:  things
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'pause']
+Correct Prediction 
+ 
+Previous word is:  things
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'pause']
+Correct Prediction 
+ 
+Previous word is:  course
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'them', 'take', 'their', 'natural', 'course', 'pause']
+Correct Prediction 
+ 
+Previous word is:  will
+Next word is:  pause
+Generated word is: make
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'make']
+Incorrect Prediction 
+
+Previous word is:  if
+Next word is:  pause
+Generated word is: you
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you']
+Incorrect Prediction 
+
+Previous word is:  yourself
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'pause']
+Correct Prediction 
+ 
+Previous word is:  world
+Next word is:  pause
+Generated word is: adult
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'adult']
+Incorrect Prediction 
+
+Previous word is:  thinking
+Next word is:  pause
+Generated word is: i
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'i']
+Incorrect Prediction 
+
+Previous word is:  stop
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'pause']
+Correct Prediction 
+ 
+Previous word is:  great
+Next word is:  pause
+Generated word is: uh
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'uh']
+Incorrect Prediction 
+
+Previous word is:  where
+Next word is:  pause
+Generated word is: you
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', 'you']
+Incorrect Prediction 
+
+Previous word is:  alive
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'pause']
+Correct Prediction 
+ 
+Previous word is:  beautiful
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'pause']
+Correct Prediction 
+ 
+Previous word is:  beautiful
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'pause']
+Correct Prediction 
+ 
+Previous word is:  beautiful
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'pause']
+Correct Prediction 
+ 
+Previous word is:  and
+Next word is:  uh
+Generated word is: just
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'just']
+Incorrect Prediction 
+
+Previous word is:  and
+Next word is:  uh
+Generated word is: just
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'just']
+Incorrect Prediction 
+
+Previous word is:  big
+Next word is:  pause
+Generated word is: adult
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'adult']
+Incorrect Prediction 
+
+Previous word is:  the
+Next word is:  um
+Generated word is: kids
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'kids']
+Incorrect Prediction 
+
+Previous word is:  the
+Next word is:  um
+Generated word is: kids
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'kids']
+Incorrect Prediction 
+
+Previous word is:  the
+Next word is:  um
+Generated word is: kids
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'kids']
+Incorrect Prediction 
+
+Previous word is:  the
+Next word is:  uh
+Generated word is: kids
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'kids']
+Incorrect Prediction 
+
+Previous word is:  the
+Next word is:  uh
+Generated word is: kids
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'kids']
+Incorrect Prediction 
+
+Previous word is:  the
+Next word is:  uh
+Generated word is: kids
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'kids']
+Incorrect Prediction 
+
+Previous word is:  happen
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'pause']
+Correct Prediction 
+ 
+Previous word is:  they're
+Next word is:  pause
+Generated word is: supposed
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed']
+Incorrect Prediction 
+
+Previous word is:  take
+Next word is:  pause
+Generated word is: it
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'them', 'take', 'it']
+Incorrect Prediction 
+
+Previous word is:  so
+Next word is:  uh
+Generated word is: don't
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', "don't"]
+Incorrect Prediction 
+
+Previous word is:  you
+Next word is:  uh
+Generated word is: say
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'say']
+Incorrect Prediction 
+
+Previous word is:  boat
+Next word is:  pause
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'movies']
+Incorrect Prediction 
+
+Previous word is:  sky
+Next word is:  pause
+Generated word is: power
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'power']
+Incorrect Prediction 
+
+Previous word is:  it's
+Next word is:  uh
+Generated word is: thing
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'thing']
+Incorrect Prediction 
+
+Previous word is:  their
+Next word is:  pause
+Generated word is: bacon
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'them', 'take', 'their', 'bacon']
+Incorrect Prediction 
+
+Previous word is:  lake
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'pause']
+Correct Prediction 
+ 
+Previous word is:  lake
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'pause']
+Correct Prediction 
+ 
+Previous word is:  both
+Next word is:  pause
+Generated word is: i
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'i']
+Incorrect Prediction 
+
+Previous word is:  ours
+Next word is:  pause
+Generated word is: through
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', 'through']
+Incorrect Prediction 
+
+Previous word is:  to
+Next word is:  uh
+Generated word is: build
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'build']
+Incorrect Prediction 
+
+Previous word is:  a
+Next word is:  uh
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'movies']
+Incorrect Prediction 
+
+Previous word is:  a
+Next word is:  uh
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'movies']
+Incorrect Prediction 
+
+Previous word is:  a
+Next word is:  uh
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'movies']
+Incorrect Prediction 
+
+Previous word is:  that
+Next word is:  uh
+Generated word is: pause
+output:  ['things', 'like', 'that', 'pause']
+Incorrect Prediction 
+
+Previous word is:  and
+Next word is:  um
+Generated word is: just
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'just']
+Incorrect Prediction 
+
+Previous word is:  and
+Next word is:  um
+Generated word is: just
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'just']
+Incorrect Prediction 
+
+Previous word is:  this
+Next word is:  uh
+Generated word is: town
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'town']
+Incorrect Prediction 
+
+Previous word is:  just
+Next word is:  uh
+Generated word is: get
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'get']
+Incorrect Prediction 
+
+Previous word is:  let
+Next word is:  pause
+Generated word is: me
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'me']
+Incorrect Prediction 
+
+Previous word is:  eating
+Next word is:  pause
+Generated word is: pause
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'pause']
+Correct Prediction 
+ 
+Previous word is:  you
+Next word is:  um
+Generated word is: say
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'say']
+Incorrect Prediction 
+
+Previous word is:  of
+Next word is:  uh
+Generated word is: through
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'through']
+Incorrect Prediction 
+
+Previous word is:  on
+Next word is:  uh
+Generated word is: a
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a']
+Incorrect Prediction 
+
+Previous word is:  on
+Next word is:  uh
+Generated word is: a
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a']
+Incorrect Prediction 
+
+Previous word is:  so
+Next word is:  um
+Generated word is: don't
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', "don't"]
+Incorrect Prediction 
+
+Previous word is:  supposed
+Next word is:  pause
+Generated word is: to
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to']
+Incorrect Prediction 
+
+Previous word is:  like
+Next word is:  uh
+Generated word is: a
+output:  ['things', 'like', 'a']
+Incorrect Prediction 
+
+Previous word is:  like
+Next word is:  uh
+Generated word is: a
+output:  ['things', 'like', 'a']
+Incorrect Prediction 
+
+Previous word is:  taking
+Next word is:  pause
+Generated word is: the
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'the']
+Incorrect Prediction 
+
+Previous word is:  are
+Next word is:  uh
+Generated word is: and
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'and']
+Incorrect Prediction 
+
+Previous word is:  to
+Next word is:  um
+Generated word is: build
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'build']
+Incorrect Prediction 
+
+Previous word is:  in
+Next word is:  uh
+Generated word is: on
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'on']
+Incorrect Prediction 
+
+Previous word is:  of
+Next word is:  um
+Generated word is: through
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'through']
+Incorrect Prediction 
+
+Previous word is:  it's
+Next word is:  um
+Generated word is: thing
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'thing']
+Incorrect Prediction 
+
+Previous word is:  that
+Next word is:  um
+Generated word is: pause
+output:  ['things', 'like', 'that', 'pause']
+Incorrect Prediction 
+
+Previous word is:  this
+Next word is:  um
+Generated word is: town
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'town']
+Incorrect Prediction 
+
+Previous word is:  just
+Next word is:  um
+Generated word is: get
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'get']
+Incorrect Prediction 
+
+Previous word is:  take
+Next word is:  uh
+Generated word is: it
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'them', 'take', 'it']
+Incorrect Prediction 
+
+Previous word is:  natural
+Next word is:  pause
+Generated word is: bacon
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'them', 'take', 'their', 'natural', 'bacon']
+Incorrect Prediction 
+
+Previous word is:  go
+Next word is:  uh
+Generated word is: sense
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'sense']
+Incorrect Prediction 
+
+Previous word is:  go
+Next word is:  uh
+Generated word is: sense
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'sense']
+Incorrect Prediction 
+
+Previous word is:  if
+Next word is:  uh
+Generated word is: you
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you']
+Incorrect Prediction 
+
+Previous word is:  them
+Next word is:  uh
+Generated word is: out
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'them', 'out']
+Incorrect Prediction 
+
+Previous word is:  all
+Next word is:  um
+Generated word is: of
+output:  ['things', 'like', 'that', 'happen', 'all', 'of']
+Incorrect Prediction 
+
+Previous word is:  great
+Next word is:  uh
+Generated word is: uh
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'uh']
+Correct Prediction 
+ 
+Previous word is:  a
+Next word is:  um
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'movies']
+Incorrect Prediction 
+
+Previous word is:  out
+Next word is:  uh
+Generated word is: i
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'i']
+Incorrect Prediction 
+
+Previous word is:  on
+Next word is:  um
+Generated word is: a
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a']
+Incorrect Prediction 
+
+Previous word is:  a
+Next word is:  um
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'movies']
+Incorrect Prediction 
+
+Previous word is:  on
+Next word is:  um
+Generated word is: a
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a']
+Incorrect Prediction 
+
+Previous word is:  a
+Next word is:  um
+Generated word is: movies
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'movies']
+Incorrect Prediction 
+
+Previous word is:  day
+Next word is:  uh
+Generated word is: don't
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', "don't"]
+Incorrect Prediction 
+
+Previous word is:  up
+Next word is:  um
+Generated word is: of
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'of']
+Incorrect Prediction 
+
+Previous word is:  will
+Next word is:  uh
+Generated word is: make
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'make']
+Incorrect Prediction 
+
+Previous word is:  go
+Next word is:  um
+Generated word is: sense
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'sense']
+Incorrect Prediction 
+
+Previous word is:  go
+Next word is:  um
+Generated word is: sense
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'sense']
+Incorrect Prediction 
+
+Previous word is:  their
+Next word is:  um
+Generated word is: bacon
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'them', 'take', 'their', 'bacon']
+Incorrect Prediction 
+
+Previous word is:  time
+Next word is:  uh
+Generated word is: racquel
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'racquel']
+Incorrect Prediction 
+
+Previous word is:  out
+Next word is:  um
+Generated word is: i
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'i']
+Incorrect Prediction 
+
+Previous word is:  are
+Next word is:  um
+Generated word is: and
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'and']
+Incorrect Prediction 
+
+Previous word is:  up
+Next word is:  uh
+Generated word is: of
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'of']
+Incorrect Prediction 
+
+Previous word is:  their
+Next word is:  uh
+Generated word is: bacon
+output:  ['things', 'like', 'that', 'happen', 'all', 'the', 'time', 'in', 'this', 'great', 'big', 'world', 'of', 'ours', "it's", 'like', 'taking', 'a', 'boat', 'out', 'on', 'a', 'beautiful', 'lake', 'on', 'a', 'beautiful', 'day', 'and', 'thinking', 'both', 'the', 'sky', 'and', 'the', 'lake', 'are', 'beautiful', 'so', 'stop', 'eating', 'yourself', 'up', 'alive', 'things', 'will', 'go', 'where', "they're", 'supposed', 'to', 'go', 'if', 'you', 'just', 'let', 'them', 'take', 'their', 'bacon']
+Incorrect Prediction 
+
+['things like that pause', 'things pause', 'things pause', "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course pause", "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself pause", "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop pause", "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive pause", "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause", "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause", "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause", 'things like that happen pause', "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake pause", "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake pause", "things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating pause", 'things like that happen all the time in this great uh']
+Sentences are: 
+things like that pause
+things pause
+things pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause
+things like that happen pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating pause
+things like that happen all the time in this great uh
+
+
+Formed:
+things like that pause happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things pause like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things pause like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course pause
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself pause up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop pause eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive pause things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen pause all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake pause on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake pause on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating pause yourself up alive things will go where they're supposed to go if you just let them take their natural course
+things like that happen all the time in this great uh big world of ours it's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful so stop eating yourself up alive things will go where they're supposed to go if you just let them take their natural course
+FINAL:
+things pause like that pause happen all the time in this great big world of ours it's like taking a boat out on a beautiful pause lake pause on a beautiful day and thinking both the sky and the lake are beautiful so stop pause eating pause yourself up alive pause things will go where they're supposed to go if you just let them take their natural course pause

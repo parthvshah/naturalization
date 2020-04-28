@@ -1,0 +1,23 @@
+BIGRAM AND POS_BIGRAM
+this has been kind of the like catalyst moment for me where I'm like oh maybe I should be giving these chances to myself instead of everybody else.
+
+
+
+FLOW - works best for small sentences
+this is 
+no i am 
+
+
+
+HYBRID
+FOR SMALLER SENTENCES USE LESSER PERCENTAGE:
+
+The fault is not in the stars but in ourselves
+
+And it is up to you to decide if you want to be remembered, or disappear without a trace, like a pitiful grain of sand into a desert of insignificance. 
+
+
+
+USE HIGHER PERCENTAGE FOR LONG SENTTENCES
+Things like that happen all the time in this great big world of ours. It's like taking a boat out on a beautiful lake on a beautiful day and thinking both the sky and the lake are beautiful. So stop eating yourself up alive. Things will go where they're supposed to go if you just let them take their natural course.
+

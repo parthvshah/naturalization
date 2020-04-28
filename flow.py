@@ -84,7 +84,7 @@ def load_tokenizer():
     y = to_categorical(y, num_classes=vocab_size)
 
     return tokenizer, max_length, vocab_size, X, y
-
+strin = input()
 tokenizer, max_length, vocab_size, X, y = load_tokenizer()
 model = model_tol(max_length, vocab_size, X, y, load=True)
-print(generate_seq(model, tokenizer, max_length-1, 'no i', 1))
+print(generate_seq(model, tokenizer, max_length-1, strin, 1))
