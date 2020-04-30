@@ -92,7 +92,7 @@ def getPOS(sentence, listOfBigrams):
 
     
 if __name__ == "__main__":
-    inputSentence = cleanInput(input())
+    inputSentence = cleanInput(input("Input Sentence: "))
 
     # bigrams = createListOfBigrams()
     # outfile = open('./obj/pos_bigram', 'wb')

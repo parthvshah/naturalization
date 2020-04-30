@@ -113,5 +113,5 @@ def bigramDriver(inputSentence):
     return ' '.join(word for word in outputSentence)
 
 if __name__ == "__main__":
-    inputSentence = cleanInput(input())
+    inputSentence = cleanInput(input("Input Sentence: "))
     print(bigramDriver(inputSentence))

@@ -193,7 +193,7 @@ def load_data(file_name, size):
 def model_tol(max_length, vocab_size, X, y, load=True):
     if(load):
         
-        model = load_model('./data/model_LSTM_h.h5')
+        model = load_model('./obj/model_LSTM_h.h5')
         # print("Loaded model from disk.")
         return model
     else:
@@ -205,7 +205,7 @@ def model_tol(max_length, vocab_size, X, y, load=True):
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
         model.fit(X, y, epochs=300) # Epochs: 500
 
-        model.save('./data/model_LSTM_h.h5')
+        model.save('./obj/model_LSTM_h.h5')
         return model
 
 def load_tokenizer():
@@ -314,7 +314,7 @@ def hybrid_driver(inputSent):
 
 
 if __name__ == "__main__":
-    inputSentence = cleanInput(input())
+    inputSentence = cleanInput(input("Input Sentence: "))
     choices = []
     sentence , choices = bigramDriver(inputSentence)
     tokenizer, max_length, vocab_size, X, y = load_tokenizer()

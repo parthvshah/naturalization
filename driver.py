@@ -5,7 +5,7 @@ def sanitize(line):
                 .replace("(um)", "") \
                 .replace("(uh)", "")
 
-inFile = 'in.txt'
+inFile = './data/test1.txt'
 
 IF = open(inFile, 'r')
 

@@ -45,7 +45,7 @@ def load_data(file_name, size):
 def model_tol(max_length, vocab_size, X, y, load=True):
     if(load):
         
-        model = load_model('./data/model_LSTM.h5')
+        model = load_model('./obj/model_LSTM.h5')
         print("Loaded model from disk.")
         return model
     else:
@@ -57,7 +57,7 @@ def model_tol(max_length, vocab_size, X, y, load=True):
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
         model.fit(X, y, epochs=50) # Epochs: 500
 
-        model.save('./data/model_LSTM.h5')
+        model.save('./obj/model_LSTM.h5')
         return model
 
 def load_tokenizer():
@@ -84,7 +84,7 @@ def load_tokenizer():
     y = to_categorical(y, num_classes=vocab_size)
 
     return tokenizer, max_length, vocab_size, X, y
-strin = input()
+string = input("Input Sentence: ")
 tokenizer, max_length, vocab_size, X, y = load_tokenizer()
 model = model_tol(max_length, vocab_size, X, y, load=True)
-print(generate_seq(model, tokenizer, max_length-1, strin, 1))
+print(generate_seq(model, tokenizer, max_length-1, string, 1))
