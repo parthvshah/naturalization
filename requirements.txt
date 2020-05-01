@@ -1,0 +1,4 @@
+nltk
+pickle
+numpy
+keras
