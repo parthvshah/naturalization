@@ -1,11 +1,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-fig, ax = plt.subplots(figsize=(6, 3), subplot_kw=dict(aspect="equal"))
+fig, ax = plt.subplots(figsize=(7, 3), subplot_kw=dict(aspect="equal"))
 
-real = 96+88
-gen = 64+58
-cd = 18+32
+# bigram
+real = 79+131
+gen = 127+102
+cd = 48+21
+
+# hybrid
+# real = 135+119
+# gen = 91+88
+# cd = 28+47
 
 total = real+gen+cd
 
@@ -33,7 +39,5 @@ for i, p in enumerate(wedges):
     ax.annotate(recipe[i], xy=(x, y), xytext=(1.35*np.sign(x), 1.4*y),
                 horizontalalignment=horizontalalignment, **kw)
 
-ax.set_title("Hybrid Results from the Survey")
-
-plt.show()
+plt.savefig('1.png')
 
