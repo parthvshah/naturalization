@@ -1,17 +1,20 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+font = {'size': 11.5}
+plt.rc('font', **font)
+
 fig, ax = plt.subplots(figsize=(7, 3), subplot_kw=dict(aspect="equal"))
 
 # bigram
-real = 79+131
-gen = 127+102
-cd = 48+21
+real = 84+140
+gen = 138+113
+cd = 54+23
 
 # hybrid
-# real = 135+119
-# gen = 91+88
-# cd = 28+47
+# real = 144+126
+# gen = 99+100
+# cd = 33+50
 
 total = real+gen+cd
 
@@ -23,13 +26,16 @@ recipe = ["Real: "+realp+"%", "Generated: "+genp+"%", "Cannot Determine: "+cdp+"
 
 data = [real, gen, cd]
 
-wedges, texts = ax.pie(data, wedgeprops=dict(width=0.5), startangle=-40)
+wedges, texts = ax.pie(data, colors=["white", "white", "white"], wedgeprops={"width":0.5, "edgecolor": "black"}, startangle=-40)
 
 bbox_props = dict(boxstyle="square,pad=0.3", fc="w", ec="k", lw=0.72)
 kw = dict(arrowprops=dict(arrowstyle="-"),
           bbox=bbox_props, zorder=0, va="center")
 
+patterns = ["-" , "+" , "o"]
+
 for i, p in enumerate(wedges):
+    p.set_hatch(patterns[(i)%len(patterns)])
     ang = (p.theta2 - p.theta1)/2. + p.theta1
     y = np.sin(np.deg2rad(ang))
     x = np.cos(np.deg2rad(ang))

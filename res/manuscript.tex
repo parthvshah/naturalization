@@ -13,13 +13,13 @@
 
 \begin{document}
 
-\title{Naturalization of Speech by the Insertion of Pauses and Filler Words}
+\title{Naturalization of Text by the Insertion of Pauses and Filler Words}
 
 \author{Richa Sharma, Parth Vipul Shah, Ashwini M. Joshi 
-\thanks{Manuscript first submitted on - 15-08-2020; No financial support or sponsors.}
-\thanks{Richa Sharma is with the Department of Computer Science and Engineering, PES University, Bangalore, Karnataka 560085 India. (e-mail: richasharma@pesu.pes.edu).}
-\thanks{Parth Vipul Shah is with the Department of Computer Science and Engineering, PES University, Bangalore, Karnataka 560085 India. (e-mail: parthvipulshah@pesu.pes.edu).}
-\thanks{Ashwini M. Joshi is with the Department of Computer Science and Engineering, PES University, Bangalore, Karnataka 560085 India. (e-mail: ashwinimjoshi@pes.edu).}
+\thanks{Manuscript first submitted on - 15-09-2020; No financial support; All authors have contributed equally.}
+\thanks{Richa Sharma, is with the Department of Computer Science and Engineering, PES University, Bangalore, Karnataka 560085 India.}
+\thanks{Parth Vipul Shah is with the Department of Computer Science and Engineering, PES University, Bangalore, Karnataka 560085 India.}
+\thanks{Ashwini M. Joshi is a professor with the Department of Computer Science and Engineering, PES University, Bangalore, Karnataka 560085 India.}
 }
 
 \markboth{IEEE Signal Processing Letters, August 2020}
@@ -39,10 +39,10 @@
 \section{Introduction}
 
 % Motivation - 1
-\IEEEPARstart{E}{lectronic} systems that interact with humans are making their way into everyday life. From robots in the house to personal assistants on our phones, these systems aid us in completing both simple and complex tasks. Interfacing with these electronic systems has also evolved. The focus has shifted to voice-based interactions over the more traditional text-based interactions seen in legacy systems. Voice commands and feedback provide a more natural way for us to interface with these systems. However, even with the rapid development of state of the art systems, we still largely interact with computerized voices. With this increase in voice-based interaction, we propose a set of methods to naturalize them. Naturalization of speech can be achieved in multiple ways but this letter focuses on the transformation of text by the addition of pauses and filler words such as 'uh' and 'um'. Google's Duplex can make calls on your behalf to book appointments or reserve tables and was unveiled in 2018. Despite being a computerized voice, pauses and filler words make the conversation more natural. Motivated by this observation, we propose a module that can be a part of a pipeline of posing a voice query to receiving a voice response from a system. This module takes the response text as input and outputs naturalized text which can then be input to a text-to-speech (TTS) module. \\
+\IEEEPARstart{E}{lectronic} systems that interact with humans are making their way into everyday life. From robots in the house to personal assistants on our phones, these systems aid us in completing both simple and complex tasks. Interfacing with these electronic systems has also evolved. The focus has shifted to voice-based interactions over the more traditional text-based interactions seen in legacy systems. Voice commands and feedback provide a more natural way for us to interface with these systems. However, even with the rapid development of state of the art systems, we still largely interact with computerized voices. With this increase in voice-based interaction, we propose a set of methods to naturalize them. Naturalization of speech can be achieved in multiple ways but this letter focuses on the transformation of text by the addition of pauses and filler words such as 'uh' and 'um'. Google's Duplex can make calls on your behalf to book appointments or reserve tables and was unveiled in 2018. Despite being a computerized voice, pauses and filler words make the conversation more natural. Motivated by this observation, we propose a module that can be a part of a pipeline of posing a voice query to receiving a voice response from a system. This module takes the response text as input and outputs naturalized text which can then be input to a text-to-speech (TTS) module. Hence, this module naturalizes speech. \\
 
 % Motivation - 2
-Previous cognitive studies of natural human speech indicate that the addition, deletion, modification of words, sentences of standard speech are observed in conversations. To achieve naturalization of speech, we resort to the addition of pauses and filler words such as 'uh' and 'um'. These pauses and filler words are an important part of natural conversations and unconsciously end up as a part of them. In natural conversations, pauses and filler words are often used when a conversationalist is either emphasizing on a part of the conversation or gathering their thoughts. By inserting them in standard text, the text is transformed into a more natural text. An example
+Previous cognitive studies of natural human speech indicate that the addition, deletion, modification of words, sentences of standard speech are observed in conversations. These can be termed as disfluencies in speech. To achieve naturalization of speech, we resort to the addition of pauses and filler words such as 'uh' and 'um'. These pauses and filler words are an important part of natural conversations and unconsciously end up as a part of them. In natural conversations, pauses and filler words are often used when a conversationalist is either emphasizing on a part of the conversation or gathering their thoughts. By inserting them in standard text, the text is transformed into a more natural text. An example
 
 \noindent\fbox{%
     \parbox{\linewidth}{%
@@ -63,26 +63,28 @@ First, we discuss data preprocessing followed by the two proposed methods. The b
 The closest imitation of natural speech which is well recorded is in the form of dialogues from movie scripts. We use the Cornell University, Movie Dialogue Corpus on Kaggle\cite{cornell} as well as the Baskin Engineering, UC Santa Cruz, Film Corpus 2.0.\cite{ucsc} Combined, this forms a corpus of over $2.2 \times 10^{6}$ lines of text. Out of this, the lines containing disfluencies such as pauses and "uh", "um" are extracted. Two or more periods or dashes are also considered as pauses. Identified pauses are replaced by "(pause)" and "uh", "um" are replaced by "(uh)", "(um)" to maintain uniformity. This forms a corpus of over $2 \times 10^{5}$ lines and serves as the training data.
 
 \subsection{Bigrams}
+
 A sentence is taken as an input and the transformed sentence with the inserted pauses and filler words is output. Parameters that control the degree of naturalization can be set. Following are the steps of this method.
 
 \begin{enumerate}
-    \item A list of bigrams of words combined with pauses and filler words as predecessor or successor is prepared from the training data. The frequency of these bigrams is recorded. Additionally, a special token is appended at the start of each sentence to account for the possibility of an insertion at the beginning of the sentence.
+    \item A list of bigrams of words combined with pauses and filler words as predecessor or successor is constructed from the training data. The frequency of these bigrams is recorded. Additionally, a special token is appended at the start of each sentence to account for the possibility of an insertion at the beginning of the sentence.
     \item Clean the input sentence by dropping punctuation and numbers. Case is uniformly set to lower. 
-    \item Find all possible insertions in the input sentence by splitting it into bigrams and comparing the predecessor and successor with the list of bigrams from step 1.
-    \item Draw from all possible insertions based on the degree of naturalization and a probability distribution. The degree of naturalization is said to be the percentage of inserted words given the length of the input sentence.
+    \item Find all possible insertions in the input sentence by splitting it into bigrams and comparing the predecessor and successor with the list of bigrams from step 1. This is the draw set, $D$.
+    \item Draw a subset from $D$ based on the degree of naturalization and a probability distribution. The degree of naturalization is said to be the percentage of inserted words given the length of the input sentence.
     \begin{equation}
         \textit{Degree of naturalization} = \frac{\textit{Number of inserted words}}{\textit{Length of input sentence}}
     \end{equation}
-    A probability distribution that fits the frequency of bigrams from step 1 is used to construct a subset of the draw set. The draw set, $D$ is defined by
+    A probability distribution that fits the frequency of bigrams from step 1 is used to construct a subset of $D$. The set of probabilities, $P$ with which a bigram appears in a subset of $D$ is 
     \begin{equation}
-        D = \{\forall x \in D, P(x)=\frac{1}{len(D)}\}
+        % P(x) = \frac{f(x)}{size(D)}
+        P = \{\frac{f(x)}{size(D)}, \forall x \in D\}
     \end{equation}
-    The size of the subset of $D$ depends on the degree of naturalization.
+    where $f(x)$ is the frequency of the bigram in the training data and $size(D)$ is the size of set $D$. The size of the subset of $D$ depends on the degree of naturalization.
     An uniform or any other probability distribution can be used too. The preceding distribution was used in this method as it gave the most intelligible transformations.  
     \item Construct the output sentence by adding the bigrams (filler word included) that are part of the subset of $D$ from step 4 to the input sentence.
 \end{enumerate}
 
-It is observed that some bigrams occur more frequently than others. This is a property of natural speech that we leverage to output more intelligible transformations. Step 1 can be performed independently and pre-computed before the method sees an input sentence. Therefore, this step does not contribute to the overall speed of the transformation. Table \ref{tab1} lists the five most frequently occurring bigrams from the training data.
+It is observed that some bigrams occur more frequently than others in a corpus of text. This is a property of natural speech that we leverage to output more intelligible transformations using the probability distribution mentioned in Equation 2. Step 1 can be performed independently and pre-computed before the method sees an input sentence. Therefore, this step does not contribute to the overall speed of the transformation. Table \ref{tab1} lists the five most frequently occurring bigrams from the training data.
 
 \begin{table}
 \caption{Most frequently occurring bigrams and their frequencies in the training data.}
@@ -105,11 +107,72 @@ and & (uh) & 100\\
 \label{tab1}
 \end{table}
 
-A valid subset of $D$ may not be possible if the training data has no occurrence of the bigrams present in the input sentence. Therefore, we propose a fallback method based on Parts of Speech (POS). This method is a variation of the method proposed above. A layer of abstraction is added by which the POS of the corpus and 
+A valid subset of $D$ may not be possible if the training data has no occurrence of the bigrams present in the input sentence. Therefore, we propose a fallback method based on Parts of Speech (POS) tagging. This method is a variation of the method proposed above. A layer of abstraction is added by which the POS tag\cite{pos} of the training data and input sentence are considered for constructing the bigrams. However, this leads to a significant delay in transformation as the input sentence is first tagged.
 
 \subsection{Hybrid}
 
-After detailing the proposed methods, we would like to state that richer training data is a sure way to improve performance. This is because the proposed methods rely directly on the training data to generate possible insertions.
+Instead of probabilistically choosing a subset of $D$, in this method, the insertions are confirmed using a Recurrent Neural Network (RNN). The RNN predicts the next word based on substrings of the input sentence, a seed phrase. If the predicted word matches a filler word, it is inserted in the output sentence. The RNN is trained on the the training data. To train the model
+
+\begin{enumerate}
+    \item Pre-process the training data. 500 of the most representative sentences of corpus are selected as training data.
+    \item Instantiate a tokenizer. The tokenizer converts the input data text into sequences. The sequence length is set to 3. The method uses the context of the two preceding words to predict one word.  
+    \item The sequences are converted to categorical data and an RNN is trained using parameters defined in Table \ref{tab4}.
+\end{enumerate}
+
+\begin{table}
+\caption{Architecture and Training Parameters of the Recurrent Neural Network (RNN).}
+\label{tab4}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|p{116pt}|p{116pt}|}
+\hline
+Parameter& 
+Value \\
+\hline
+Layers &  1 \\
+Units B & 100 LSTM\cite{lstm} \\
+Loss Function &  Categorical Cross-entropy\cite{cce} \\
+Optimizer &  Adam\cite{adam} \\
+Epochs & 300 \\
+\hline
+\end{tabular}
+\label{tab4}
+\end{table}
+
+We use a simple model as this ensures transformation speed is high. The training data consists of only a subset of the corpus because for larger training data, a drop in accuracy is observed as the simple model fails to fit the large sample space. A sequence length of 3 was found to give highest accuracy. This simple model can be improved to obtain more intellegible transformations.
+To transform an input sentence after training is complete
+
+\begin{enumerate}
+    \item Clean the input sentence by dropping punctuation and numbers. Case is uniformly set to lower.
+    \item From the bigram method, obtain the draw set, $D$. However, discard all bigrams that have a filler word as a predecessor.
+    \item A substring of the input sentence constructed upto an insertion from $D$ is passed through the model to predict the next word. If the next word is the filler word from the bigram, the insertion is confirmed. This is the intermediate output. Based on the degree of naturalization, a subset of all confirmed insertions are selected and the output sentence is constructed.
+\end{enumerate}
+
+Sample incorrect and correct predictions for an input sentence "Let us try this one more time." follow
+\noindent\fbox{%
+    \parbox{\linewidth}{%
+        Substring of the input sentence: Let \\
+        Bigram from $D$: let, \textit{(pause)} \\
+        Hybrid predicted next word: \textit{me}\\
+        \textbf{Incorrect Prediction} \\
+        Intermediate output: Let us try this one more time.
+    }%
+}
+\\
+\noindent\fbox{%
+    \parbox{\linewidth}{%
+        Substring of the input sentence: Let us\\
+        Bigram from $D$: us, \textit{(pause)} \\
+        Hybrid predicted next word: \textit{(pause)}\\
+        \textbf{Correct Prediction} \\
+        Intermediate output: Let us (pause) try this one more time.
+    }%
+}
+\\
+
+We observe that the model confirms a pause more frequently than the other filler words. According to \cite{cognitive}, pauses in natural language can be replaced by other filler words. Longer sentences are also more likely to begin with these filler words. Therefore, we take the liberty to replace the first $n$ pauses by the other filler words where $n$ is based on the degree of naturalization. 
+
+After detailing the proposed methods, we state that richer training data is a sure way to output more intelligible transformations because the proposed methods rely heavily on the training data to generate possible insertions. Richer training data can be obtained by including a range of contexts if the input sentences are going to be general purpose. Training data can include specific contexts and introduce bias if the input sentences are going to be from a single context. Additionally, if the training data is a close representation of natural speech with the correct disfluencies inserted at the correct positions, the methods improve. 
 
 \section{Results}
 
@@ -124,13 +187,28 @@ As there are multiple ways of achieving natural speech, we aim to transform the 
 }
 \\
 
-% TODO: add timing data
+Therefore, we use a medium sized pool of 275 odd individuals to evaluate the outputs and determine if they sound natural or not. We refer to them as respondents hereafter. While answering the question "Which of the following sounds more natural?" judging between two text excerpts is more difficult than judging between two voice clips of the same text excerpts. Hence, the respondents were presented with two voice clips. One was a performance of an original interview's transcript, one was a performance of the transformed text of the same interview's transcript. Both were performed by the same voice actor. Here is an example of the output text from the bigram method followed by an example from the hybrid method
 
-% TODO: add examples of transformation from interviews 
 
-Therefore, we use a medium sized pool of 250 odd individuals to evaluate the outputs and determine if they sound natural or not. We refer to them as respondents hereafter. The respondents were presented with two voice clips. One was a performance of an original interview's transcript, one was a performance of the transformed text of the same interview's transcript. Both were performed by the same voice actor. 
-The respondents were tasked with determining which sounded more natural out of the two voice clips. A "Cannot Determine" choice was also included as this would indicate near natural transformation by our methods. This was repeated twice per method with different interviews to test it's robustness when the context was varied.
-Table \ref{tab2} and \ref{tab3} list results of each sample, each method. Figures \ref{fig1} and \ref{fig2} illustrate only the summary for each method.
+\noindent\fbox{%
+    \parbox{\linewidth}{%
+       Real: When we actually started recording the album we had this beautiful place, when we like rented this kind of beach (pause) shack and (um) that's the only thing I asked for in the budget though.\\
+       Generated: When we actually started recording the (pause) album we had this beautiful place when we like rented this kind of beach shack (uh) and that's the (pause) only thing I asked for in the (pause) budget though.
+
+    }%
+}
+\\
+
+
+\noindent\fbox{%
+    \parbox{\linewidth}{%
+       Real: I spend a week in a year where I just go off and (uh) read (pause) people's PhD theses and new things that are going on in the field.\\
+       Generated: I spend a week in a year where I just (uh) go off and read people's PhD theses and new things (uh) that are (pause) going on in the field.
+    }%
+}
+\\
+
+A "Cannot Determine" choice was also included as this would indicate near natural transformation by our methods. This was repeated twice per method with different interviews to test it's robustness when the context of the input text was varied. Table \ref{tab2} and \ref{tab3} list results of each sample, each method. Figures \ref{fig1} and \ref{fig2} illustrate only the summary for each method.
 
 % TODO: add values to table, update figures
 
@@ -139,15 +217,17 @@ Table \ref{tab2} and \ref{tab3} list results of each sample, each method. Figure
 \label{tab2}
 \small
 \setlength{\tabcolsep}{3pt}
-\begin{tabular}{|p{60pt}|p{60pt}||p{60pt}|p{60pt}|}
+\begin{tabular}{|p{58pt}|p{58pt}|p{58pt}|p{58pt}|}
 \hline
 Sample& 
 Real& 
 Generated&
 Cannot Determine \\
 \hline
-Sample A & \% & \% & \% \\
-Sample B & \% & \% & \% \\
+% Sample A & 84 & 138 & 54 \\ % total: 276
+% Sample B & 140 & 113 & 23 \\ % total: 276
+Sample A & 30.4\% & 50.0\% & 19.6\% \\
+Sample B & 50.7\% & 40.9\% & 8.3\% \\ 
 \hline
 \end{tabular}
 \label{tab2}
@@ -158,15 +238,17 @@ Sample B & \% & \% & \% \\
 \label{tab3}
 \small
 \setlength{\tabcolsep}{3pt}
-\begin{tabular}{|p{60pt}|p{60pt}||p{60pt}|p{60pt}|}
+\begin{tabular}{|p{58pt}|p{58pt}|p{58pt}|p{58pt}|}
 \hline
 Sample& 
 Real& 
 Generated&
 Cannot Determine \\
 \hline
-Sample C & \% & \% & \% \\
-Sample D & \% & \% & \% \\
+% Sample C & 144 & 99 & 33 \\ % total: 276
+% Sample D & 126 & 100 & 50 \\ % total: 276
+Sample C & 52.2\% & 35.9\% & 12.0\% \\
+Sample D & 45.7\% & 36.2\% & 18.1\% \\ 
 \hline
 \end{tabular}
 \label{tab3}
@@ -184,13 +266,34 @@ Sample D & \% & \% & \% \\
 \label{fig2}
 \end{figure}
 
-Counter-intuitively, the hybrid method performs slightly worse than the bigram method. However, this could be a result of the bias with respect to the context of the sample interviews. The methods may perform poorly in certain contexts. We reiterate that the methods are highly sensitive to the context of the training data. As the size of the training data and the breadth of the context increase, the methods get more robust and consequently, the transformations more natural. 
+If "Generated" and "Cannot Determine" together form the majority of responses ($\geq 50\%$), our methods can be said to effectively naturalize text. The "Cannot Determine" choice indicates that the transformation was indiscernible from the original text. Counter-intuitively, the hybrid method performs slightly worse than the bigram method. However, this could be a result of the bias with respect to the context of the sample interviews. The methods may perform poorly in certain contexts. We reiterate that the methods are highly sensitive to the context of the training data. As the size of the training data and the breadth of the context increase, the methods get more robust and consequently, the transformations more natural. \\
+
+As stated previously, our methods of text transformation are fast. This is to ensure that this text transformation module can be integrated as a precursor to a TTS module. Table \ref{tab5} details the timing data for both methods. All benchmarks are performed with equal compute power to maintain uniformity. 
+
+% TODO: add justification for timing data and timing data
+
+\begin{table}
+\caption{Timing Data for the bigram and hybrid method.}
+\label{tab5}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|p{58pt}|p{58pt}|p{58pt}|p{58pt}|}
+\hline
+Sample& 
+Real& 
+Generated&
+Cannot Determine \\
+\hline
+Sample C & \% & \% & \% \\
+Sample D & \% & \% & \% \\
+\hline
+\end{tabular}
+\label{tab5}
+\end{table}
 
 \section{Conclusion}
 
-In this letter, we propose a novel, fast transformation method that has tunable naturalization. It also uses a hybrid approach to further confirm the transformations. We have also evaluated our methods using a medium sized pool of individuals to evaluate the outputs and determine if they are natural or not. We conclude that our methods yield near natural transformations of text.
-
-% TODO: talk about result summary here
+In this letter, we propose a novel, fast transformation method that has tunable naturalization. It also uses a hybrid approach to further confirm the transformations. We evaluate our methods using a medium sized pool of individuals to evaluate the outputs and determine if they are natural or not. We conclude that our methods yield near natural transformations of text and can be integrated as a module into a voice query to voice response pipeline.
 
 % Hybrid approach for confirmation 
 % Fast lookup for insertion of filler words
